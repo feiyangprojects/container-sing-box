@@ -21,9 +21,9 @@ LABEL org.opencontainers.image.licenses GPL-3.0-only
 LABEL org.opencontainers.image.title Sing-Box
 LABEL org.opencontainers.image.description "Minimalistic Sing-Box container image based on Apline linux."
 
-RUN set -ex && mkdir -p /config /data /usr/local/share/sing-box \
-    && wget -O /usr/local/share/sing-box/geoip.db https://github.com/SagerNet/sing-geoip/releases/latest/download/geoip.db \
-    && wget -O /usr/local/share/sing-box/geosite.db https://github.com/SagerNet/sing-geosite/releases/latest/download/geosite.db
+RUN set -ex && mkdir -p /config /data /usr/share/sing-box \
+    && wget -O /usr/share/sing-box/geoip.db https://github.com/SagerNet/sing-geoip/releases/latest/download/geoip.db \
+    && wget -O /usr/share/sing-box/geosite.db https://github.com/SagerNet/sing-geosite/releases/latest/download/geosite.db
 
 COPY --from=builder /usr/bin/sing-box /usr/bin/sing-box
 
