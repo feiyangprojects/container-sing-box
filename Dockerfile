@@ -5,7 +5,7 @@ ARG VERSION
 RUN set -ex && apk add gcc musl-dev && cd / \
     && wget -O - "https://github.com/SagerNet/sing-box/archive/$VERSION.tar.gz" | tar xzf -
 RUN set -ex && cd /sing-box-*/ \
-    && go build -trimpath -v -o /usr/bin/sing-box -tags "with_quic,with_grpc,with_wireguard,with_ech,with_utls,with_clash_api,with_gvisor" -ldflags " \
+    && go build -trimpath -v -o /usr/bin/sing-box -tags "with_quic,with_grpc,with_dhcp,with_wireguard,with_shadowsocksr,with_ech,with_utls,with_reality_server,with_clash_api,with_v2ray_api,with_gvisor" -ldflags " \
     -X 'github.com/sagernet/sing-box/constant.Commit=$VERSION' \
     -w -s -buildid=" ./cmd/sing-box
 
