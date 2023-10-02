@@ -12,10 +12,10 @@ RUN set -ex && cd /sing-box-*/ \
 
 FROM alpine:latest
 
-LABEL org.opencontainers.image.authors "Fei Yang <projects@feiyang.moe>"
-LABEL org.opencontainers.image.url https://github.com/RmVpMVlhbmc/container-sing-box
-LABEL org.opencontainers.image.documentation https://github.com/RmVpMVlhbmc/container-sing-box/blob/main/README.md
-LABEL org.opencontainers.image.source https://github.com/RmVpMVlhbmc/container-sing-box
+LABEL org.opencontainers.image.authors "Fei Yang <projects@feiyang.eu.org>"
+LABEL org.opencontainers.image.url https://github.com/feiyangprojects/container-sing-box
+LABEL org.opencontainers.image.documentation https://github.com/feiyangprojects/container-sing-box/blob/main/README.md
+LABEL org.opencontainers.image.source https://github.com/feiyangprojects/container-sing-box
 LABEL org.opencontainers.image.vendor "FeiYang Labs"
 LABEL org.opencontainers.image.licenses GPL-3.0-only
 LABEL org.opencontainers.image.title Sing-Box
